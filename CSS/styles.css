@@ -1,0 +1,105 @@
+/* ------------- Colors --------------------------------------*/
+:root {
+  --main-red: #a82428;
+  --main-green: #cbeaa6;
+  --main-blue: #8acdea;
+  --main-violet: #ede6f2;
+  --main-white: ghostwhite;
+  --light-grey: #55595c;
+  --very-light-grey: #ced4da;
+  --very-light-grey-2: #f7f7f9;
+  --light-grey-2: #c6c6c6;
+}
+/* -------------- Reset --------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  padding-top: 4rem;
+  scroll-padding-top: 11.5rem;
+}
+
+h1 {
+  font-size: 5.6rem;
+}
+
+h2 {
+  font-size: 3.3rem;
+}
+
+h3 {
+  font-size: 2.6rem;
+}
+
+p,
+a {
+  font-size: 2rem;
+}
+/* -------------- Navbar ------------------------------------------------*/
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--main-green);
+  color: var(--main-red);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 0.2rem 0.5rem;
+  z-index: 0;
+}
+
+.navbar img {
+  width: 10rem;
+  height: auto;
+}
+
+.nav-menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  transform: translateY(-60rem);
+  background-color: var(--main-red);
+  position: absolute;
+  width: 100vw;
+  top: 7rem;
+  left: 0;
+  z-index: -1;
+}
+
+.active {
+  transform: translateY(0);
+  transition: transform 500ms ease-in-out;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--main-white);
+  font-weight: 700;
+  font-size: 3rem;
+  position: relative;
+  padding-bottom: 0;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+}
+
+.bi-list {
+  cursor: pointer;
+  font-size: 3.7rem;
+}
+
+/* -------------- Articles ------------------------------------------------*/
+.div-article-img img {
+  width: 100%;
+}
