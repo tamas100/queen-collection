@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Queen gyűjteményem</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- ******************************************* Navbar *********************************       -->
+      <nav class="navbar">
+        <img src="./images/logo/logo-no-background.png" alt="" />
+        <ul id="menu-list" class="nav-menu-list">
+          <li><a href="#home">Főoldal</a></li>
+          <li><a href="#articles">Írások</a></li>
+          <li><a href="#contact">Kapcsolat</a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <div id="button-js" class="menu-button">
+          <i id="button-icon-js" class="bi bi-list"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- ******************************************* Home *********************************       -->
+      <section class="section-home" id="home">
+        <h1>A Queen gyűjteményem</h1>
+        <p class="home-text">
+          Ez az oldal a Queen együttesről és rólam fog szólni. Arra gondoltam,
+          hogy leveszek egy-egy Queen-nel kapcsolatos tárgyat a polcról és néha
+          hosszabban, néha rövidebben elmesélem ami eszembe jut róla.
+        </p>
+      </section>
+      <!-- ******************************************* Articles *********************************       -->
+      <section class="section-queen-articles" id="articles">
+        <h2>Bejegyzéseim</h2>
+        <article class="article-queen-article" id="second-article">
+          <div class="div-article-img">
+            <h3>Burns Brian May gitár</h3>
+            <img src="" alt="Burns Brian May guitar" />
+          </div>
+          <div class="div-queen-article-text">
+            <p></p>
+          </div>
+        </article>
+        <article class="article-queen-article" id="first-article">
+          <h3>Queen Greatest Flix I & II - DVD</h3>
+          <div class="div-article-img">
+            <img
+              src="./images/qgfdvd.png"
+              alt="Queen Greatest Flix I & II - DVD"
+            />
+          </div>
+          <div class="div-queen-article-text">
+            <p>
+              Itt találsz részletesebb információt és képeket:
+              <a
+                href="https://www.discogs.com/release/3389317-Queen-Greatest-Flix-I-II"
+                >Discogs</a
+              >
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- ******************************************* Contact *********************************       -->
+      <section class="section-contact" id="contact">
+        <div class="contact-text">
+          <h2>Kapcsolat</h2>
+          <p class="form-text">
+            Ha bármilyen kérdésed, vagy észrevételed van, küldj egy üzenetet!
+          </p>
+        </div>
+        <form
+          action="https://formspree.io/f/xpzgavla"
+          method="post"
+          class="contact-form"
+        >
+          <label class="form-label">
+            Vezetéknév*<input
+              type="text"
+              name="last-name"
+              placeholder="Ide írd a vezetékneved!"
+              required
+              class="form-input"
+            />
+          </label>
+          <label class="form-label"
+            >Keresztnév*<input
+              type="text"
+              name="first-name"
+              placeholder="Ide írd a keresztneved!"
+              required
+              class="form-input"
+            />
+          </label>
+          <label class="form-label"
+            >Email-cím*<input
+              type="email"
+              name="email"
+              placeholder="Ide írd az email-címedet!"
+              required
+              class="form-input"
+            />
+          </label>
+          <label class="form-label">
+            Üzenetet
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              class="form-input form-textarea"
+              placeholder="Ide írhatod az üzenetet..."
+            ></textarea>
+          </label>
+          <div class="form-btn">
+            <button class="btn btn-primary">
+              <i class="bi bi-send-fill"></i> Beküld
+            </button>
+          </div>
+        </form>
+        <p class="form-text">
+          A csillaggal (*) jelölt mezők kitöltése kötelező!
+        </p>
+      </section>
+      <!-- ******************************************* Footer *********************************       -->
+      <footer>
+        <p>Copyright &copy; 2023 Kis Tamás</p>
+        <a href="#home"><i class="bi bi-arrow-up nav-top"></i></a>
+      </footer>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
