@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A Queen gyűjteményem</title>
+    <title>Tamás Queen gyűjteménye</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -38,7 +38,10 @@
     <header>
       <!-- ******************************************* Navbar *********************************       -->
       <nav class="navbar">
-        <img src="./images/logo/logo-no-background.png" alt="" />
+        <div class="navbar-text">
+          <img src="./images/logo/logo-no-background.png" alt="" />
+          <p>Tamás Queen gyűjteménye</p>
+        </div>
         <ul id="menu-list-js" class="nav-menu-list">
           <li><a href="#home">Főoldal</a></li>
           <li><a href="#articles">Írások</a></li>
@@ -53,12 +56,14 @@
     <main>
       <!-- ******************************************* Home *********************************       -->
       <section class="section-home" id="home">
-        <h1>A Queen gyűjteményem</h1>
-        <p class="home-text">
-          Ez az oldal a Queen együttesről és rólam fog szólni. Arra gondoltam,
-          hogy leveszek egy-egy Queen-nel kapcsolatos tárgyat a polcról és néha
-          hosszabban, néha rövidebben elmesélem ami eszembe jut róla.
-        </p>
+        <div class="home-text">
+          <h1>Tamás Queen gyűjteménye</h1>
+          <p>
+            Ez az oldal a Queen együttesről és rólam fog szólni. Arra gondoltam,
+            hogy leveszek egy-egy Queen-nel kapcsolatos tárgyat a polcról és
+            néha hosszabban, néha rövidebben elmesélem ami eszembe jut róla.
+          </p>
+        </div>
       </section>
       <!-- ******************************************* Articles *********************************       -->
       <section class="section-queen-articles" id="articles">
@@ -69,7 +74,15 @@
             <img src="" alt="Burns Brian May guitar" />
           </div>
           <div class="div-queen-article-text">
-            <p></p>
+            <p class="p-queen-article-text"></p>
+          </div>
+          <div class="div-queen-article-more-info">
+            <p class="p-queen-article-more-info">
+              Itt találsz részletesebb információt és képeket:
+              <a href="https://www.brianmaycentral.net"
+                >https://www.brianmaycentral.net/burns.html</a
+              >
+            </p>
           </div>
         </article>
         <article class="article-queen-article" id="first-article">
@@ -81,7 +94,29 @@
             />
           </div>
           <div class="div-queen-article-text">
-            <p>
+            <p class="p-queen-article-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+              molestiae beatae quae vitae natus praesentium accusamus molestias
+              eaque iusto suscipit sunt ipsa, nobis ab odio inventore expedita?
+              Consectetur possimus ducimus, provident quo reprehenderit
+              nesciunt, suscipit sapiente, adipisci debitis at odio ea facere
+              quidem! Explicabo, molestias! Mollitia, illum vero consectetur
+              voluptatem error harum quod? Unde fuga quaerat eum exercitationem.
+              Repellendus quasi quisquam cumque! Mollitia necessitatibus
+              blanditiis corrupti ad ipsa quis nulla sapiente commodi voluptates
+              asperiores soluta sunt consequuntur ducimus non iure adipisci
+              beatae, quaerat id perferendis deserunt ex. Explicabo accusantium
+              ducimus quisquam iusto ipsum, ab, error rerum cupiditate quasi
+              aspernatur illum dolorum repellat nam vitae vel aperiam unde?
+              Dolorum, quos rem. Exercitationem amet voluptas eum sint ducimus
+              deleniti vitae magnam eaque atque, earum nisi ut tenetur, sequi
+              explicabo animi eos numquam qui enim architecto! Eos veniam enim,
+              culpa provident exercitationem recusandae quasi mollitia, illo
+              quidem sapiente totam eum et eveniet praesentium?
+            </p>
+          </div>
+          <div class="div-queen-article-more-info">
+            <p class="p-queen-article-more-info">
               Itt találsz részletesebb információt és képeket:
               <a
                 href="https://www.discogs.com/release/3389317-Queen-Greatest-Flix-I-II"
@@ -154,6 +189,17 @@
       <!-- ******************************************* Footer *********************************       -->
       <footer>
         <p>Copyright &copy; 2023 Kis Tamás</p>
+        <div class="social-media">
+          <a href="https://github.com/tamas100" target="_blank"
+            ><i class="bi bi-github btn btn-primary"></i
+          ></a>
+          <a href="mailto:t.kis502@gmail.com" target="_blank"
+            ><i class="bi bi-envelope-fill btn btn-primary"></i
+          ></a>
+          <a href="https://www.linkedin.com" target="_blank"
+            ><i class="bi bi-linkedin btn btn-primary"></i
+          ></a>
+        </div>
         <a href="#home"><i class="bi bi-arrow-up nav-top"></i></a>
       </footer>
     </main>
